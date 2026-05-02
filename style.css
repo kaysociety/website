@@ -313,3 +313,146 @@ footer {
     font-weight: bold;
 }
 
+/* =========================================
+    FULL MOBILE STABILITY FIX (NON-DESTRUCTIVE)
+========================================= */
+
+html, body {
+  overflow-x: hidden; /* PREVENT SIDE SCROLL CRASH */
+}
+
+/* ---------- NAVBAR FIX ---------- */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+}
+
+/* ---------- HERO FIX ---------- */
+@media (max-width: 768px) {
+
+  .hero {
+    height: auto; /* CRITICAL FIX (100vh breaks on phones) */
+    padding: 100px 20px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+    max-width: 90%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons a {
+    width: 80%;
+    text-align: center;
+  }
+
+}
+
+/* ---------- GRID FIX ---------- */
+@media (max-width: 768px) {
+
+  .grid,
+  .tools-container,
+  .cert-container,
+  .repo-container {
+    grid-template-columns: 1fr !important;
+  }
+
+}
+
+/* ---------- CARD FIX ---------- */
+@media (max-width: 768px) {
+
+  .card,
+  .tool-card,
+  .cert-card,
+  .repo-card {
+    padding: 15px;
+  }
+
+}
+
+/* ---------- WRITEUP / BLOG FIX ---------- */
+@media (max-width: 768px) {
+
+  section {
+    padding: 60px 20px;
+  }
+
+  .para {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    word-wrap: break-word;
+  }
+
+  p {
+    word-break: break-word;
+  }
+
+  .left {
+    font-size: 1rem;
+  }
+
+  .headblog {
+    font-size: 1.1rem;
+  }
+
+}
+
+/* ---------- TERMINAL FIX ---------- */
+@media (max-width: 768px) {
+
+  #terminal {
+    font-size: 0.8rem;
+    overflow-x: auto;
+    white-space: pre-wrap;
+  }
+
+}
+
+/* ---------- SMALL DEVICES ---------- */
+@media (max-width: 480px) {
+
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.85rem;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+
+  .buttons a {
+    width: 100%;
+  }
+
+}
+
