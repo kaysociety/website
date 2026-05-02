@@ -456,3 +456,16 @@ html, body {
 
 }
 
+/* ===== TYPEWRITER EFFECT ===== */
+.typing {
+  overflow: hidden;
+  border-right: 2px solid var(--accent);
+  white-space: nowrap;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,100% { border-color: transparent; }
+  50% { border-color: var(--accent); }
+}
+
