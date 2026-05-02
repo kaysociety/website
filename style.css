@@ -210,4 +210,106 @@ footer {
   color: var(--muted);
 }
 
+/* =========================
+   MOBILE RESPONSIVENESS FIX
+========================= */
+
+@media (max-width: 768px) {
+
+  /* GENERAL SPACING FIX */
+  section {
+    padding: 60px 20px;
+  }
+
+  /* NAVBAR STACK */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px 10px;
+    font-size: 0.9rem;
+  }
+
+  /* HERO TEXT FIX */
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* GRID FIX (PROJECTS + TOOLS) */
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CARDS */
+  .card {
+    padding: 15px;
+  }
+
+  /* WRITEUP TEXT FIX */
+  .para {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* HEADERS */
+  .left {
+    font-size: 1rem;
+  }
+
+  .headblog {
+    font-size: 1.1rem;
+  }
+
+  /* SKILL LIST FIX */
+  #skill {
+    padding-left: 15px;
+  }
+
+  /* TERMINAL FIX */
+  #terminal {
+    font-size: 0.8rem;
+    overflow-x: auto;
+  }
+
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.85rem;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+
+  .para {
+    font-size: 0.85rem;
+  }
+
+}
 
